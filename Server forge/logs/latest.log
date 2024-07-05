@@ -1,94 +1,169 @@
-[28jun2024 23:22:49.867] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
-[28jun2024 23:22:49.870] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.2 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[28jun2024 23:22:49.979] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
-[28jun2024 23:22:50.010] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Julian/Downloads/Server%20forge/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
-[28jun2024 23:22:50.145] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Julian\Downloads\Server forge\libraries\net\minecraftforge\fmlcore\1.20.1-47.3.0\fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
-[28jun2024 23:22:50.149] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Julian\Downloads\Server forge\libraries\net\minecraftforge\javafmllanguage\1.20.1-47.3.0\javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[28jun2024 23:22:50.152] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Julian\Downloads\Server forge\libraries\net\minecraftforge\lowcodelanguage\1.20.1-47.3.0\lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[28jun2024 23:22:50.155] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Julian\Downloads\Server forge\libraries\net\minecraftforge\mclanguage\1.20.1-47.3.0\mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[28jun2024 23:22:50.207] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[28jun2024 23:22:50.944] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
-[28jun2024 23:22:54.621] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.0, for MC 1.20.1 with MCP 20230612.114412
-[28jun2024 23:22:54.623] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.0 Initialized
-[28jun2024 23:22:55.148] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[28jun2024 23:22:55.575] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.3.0 Target: null
-[28jun2024 23:22:55.723] [main/ERROR] [net.minecraft.server.dedicated.Settings/]: Failed to load properties from file: server.properties
-java.nio.file.NoSuchFileException: server.properties
-	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source) ~[?:?]
-	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source) ~[?:?]
-	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source) ~[?:?]
-	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(Unknown Source) ~[?:?]
-	at java.nio.file.Files.newByteChannel(Unknown Source) ~[?:?]
-	at java.nio.file.Files.newByteChannel(Unknown Source) ~[?:?]
-	at java.nio.file.spi.FileSystemProvider.newInputStream(Unknown Source) ~[?:?]
-	at java.nio.file.Files.newInputStream(Unknown Source) ~[?:?]
-	at net.minecraft.server.dedicated.Settings.m_139839_(Settings.java:36) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.server.dedicated.DedicatedServerProperties.m_180929_(DedicatedServerProperties.java:137) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.server.dedicated.DedicatedServerSettings.<init>(DedicatedServerSettings.java:12) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.server.Main.main(Main.java:126) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[?:?]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
-	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[28jun2024 23:22:55.746] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[28jun2024 23:22:55.772] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Julian/Downloads/Server%20forge/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23101!/assets/.mcassetsroot' uses unexpected schema
-[28jun2024 23:22:55.773] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Julian/Downloads/Server%20forge/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23101!/data/.mcassetsroot' uses unexpected schema
-[28jun2024 23:22:56.654] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[28jun2024 23:22:56.717] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
-[28jun2024 23:22:57.240] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
-[28jun2024 23:22:57.240] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
-[28jun2024 23:22:57.242] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
-[28jun2024 23:22:57.242] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[28jun2024 23:22:57.306] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
-[28jun2024 23:22:57.314] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
-[28jun2024 23:22:57.420] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\world\serverconfig\forge-server.toml is not correct. Correcting
-[28jun2024 23:22:57.422] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
-[28jun2024 23:22:57.422] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
-[28jun2024 23:22:57.422] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
-[28jun2024 23:22:57.423] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
-[28jun2024 23:22:57.423] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to its default, 0.1. 
-[28jun2024 23:22:57.424] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to its default, 0.05. 
-[28jun2024 23:22:57.424] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
-[28jun2024 23:22:57.424] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
-[28jun2024 23:22:57.447] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
-[28jun2024 23:22:59.062] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[28jun2024 23:22:59.435] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[28jun2024 23:22:59.624] [Worker-Main-4/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[28jun2024 23:23:00.067] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 1%
-[28jun2024 23:23:00.564] [Worker-Main-15/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 4%
-[28jun2024 23:23:01.064] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 9%
-[28jun2024 23:23:01.570] [Worker-Main-6/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 15%
-[28jun2024 23:23:02.063] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 21%
-[28jun2024 23:23:02.567] [Worker-Main-6/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 29%
-[28jun2024 23:23:03.068] [Worker-Main-5/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 36%
-[28jun2024 23:23:03.567] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 43%
-[28jun2024 23:23:04.066] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
-[28jun2024 23:23:04.567] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 57%
-[28jun2024 23:23:05.068] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 65%
-[28jun2024 23:23:05.564] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 72%
-[28jun2024 23:23:06.066] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 82%
-[28jun2024 23:23:06.568] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 88%
-[28jun2024 23:23:07.073] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 99%
-[28jun2024 23:23:07.111] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 8048 ms
-[28jun2024 23:23:07.111] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (9.698s)! For help, type "help"
-[28jun2024 23:23:07.125] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[28jun2024 23:23:17.932] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
-[28jun2024 23:23:17.976] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[28jun2024 23:23:17.977] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[28jun2024 23:23:17.977] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[28jun2024 23:23:18.386] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[28jun2024 23:23:18.936] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[28jun2024 23:23:18.937] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[28jun2024 23:23:18.956] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[28jun2024 23:23:18.957] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[28jun2024 23:23:18.957] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[28jun2024 23:23:18.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[05Jul2024 01:37:44.221] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[05Jul2024 01:37:44.225] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.3 by Ubuntu; OS Linux arch amd64 version 6.8.0-36-generic
+[05Jul2024 01:37:44.459] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[05Jul2024 01:37:44.508] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/root/github_mods/minecraft-server/Server%20forge/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
+[05Jul2024 01:37:44.766] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /root/github_mods/minecraft-server/Server forge/libraries/net/minecraftforge/fmlcore/1.20.1-47.3.0/fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
+[05Jul2024 01:37:44.768] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /root/github_mods/minecraft-server/Server forge/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.3.0/javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[05Jul2024 01:37:44.771] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /root/github_mods/minecraft-server/Server forge/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.3.0/lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[05Jul2024 01:37:44.772] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /root/github_mods/minecraft-server/Server forge/libraries/net/minecraftforge/mclanguage/1.20.1-47.3.0/mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[05Jul2024 01:37:44.873] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[05Jul2024 01:37:46.242] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[05Jul2024 01:37:53.475] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.0, for MC 1.20.1 with MCP 20230612.114412
+[05Jul2024 01:37:53.481] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.0 Initialized
+[05Jul2024 01:37:53.595] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Warped Netherlands
+[05Jul2024 01:37:53.599] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Stalactite Caves
+[05Jul2024 01:37:53.600] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Space Wars
+[05Jul2024 01:37:53.602] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Shire
+[05Jul2024 01:37:53.604] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Desert Oasis
+[05Jul2024 01:37:53.605] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Pagoda
+[05Jul2024 01:37:53.610] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Minecolonies Original
+[05Jul2024 01:37:53.610] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Nordic Spruce
+[05Jul2024 01:37:53.611] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Spruce
+[05Jul2024 01:37:53.611] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Oak
+[05Jul2024 01:37:53.612] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Dark Oak
+[05Jul2024 01:37:53.612] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Birch
+[05Jul2024 01:37:53.613] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Lost Mesa City
+[05Jul2024 01:37:53.613] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Jungle Treehouse
+[05Jul2024 01:37:53.613] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Incan
+[05Jul2024 01:37:53.617] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Fortress
+[05Jul2024 01:37:53.617] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Dark Oak Treehouse
+[05Jul2024 01:37:53.618] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Colonial
+[05Jul2024 01:37:53.621] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Cavern
+[05Jul2024 01:37:53.621] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Caledonia
+[05Jul2024 01:37:53.622] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Urban Birch
+[05Jul2024 01:37:53.622] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Urban Savanna
+[05Jul2024 01:37:53.626] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: edc6777c-65a2-3ee1-9dae-858378080cc4Yuri_Macarron
+[05Jul2024 01:37:53.627] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: e6f73704-5ce7-3b74-8b43-c65d9da3de11DomingoFuenza
+[05Jul2024 01:37:53.630] [Structurize IO Worker #0/WARN] [structurize/]: Finished discovering Server Structure packs
+[05Jul2024 01:37:55.255] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[05Jul2024 01:37:55.463] [modloading-worker-0/WARN] [minecolonies/]: Register mappings
+[05Jul2024 01:37:55.789] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.3.0 Target: null
+[05Jul2024 01:37:56.605] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[05Jul2024 01:37:57.585] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/root/github_mods/minecraft-server/Server%20forge/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23111!/assets/.mcassetsroot' uses unexpected schema
+[05Jul2024 01:37:57.586] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/root/github_mods/minecraft-server/Server%20forge/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23111!/data/.mcassetsroot' uses unexpected schema
+[05Jul2024 01:37:59.313] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 9 recipes
+[05Jul2024 01:37:59.420] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1479 advancements
+[05Jul2024 01:37:59.425] [main/INFO] [minecolonies/]: Beginning load of custom recipes for colony workers
+[05Jul2024 01:37:59.434] [main/INFO] [minecolonies/]: Loaded 133 recipes for 15 crafters
+[05Jul2024 01:37:59.434] [main/INFO] [minecolonies/]: Beginning load of research for University.
+[05Jul2024 01:37:59.487] [main/INFO] [minecolonies/]: Loaded 201 recipes for 4 research branches
+[05Jul2024 01:37:59.491] [main/INFO] [minecolonies/]: Loading quests from data
+[05Jul2024 01:37:59.499] [main/INFO] [minecolonies/]: Finished loading quests from data
+[05Jul2024 01:37:59.504] [main/WARN] [minecolonies/]: Read 1456 items with their nbt keys for compatibility.
+[05Jul2024 01:38:00.286] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
+[05Jul2024 01:38:00.287] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[05Jul2024 01:38:00.287] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[05Jul2024 01:38:00.287] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[05Jul2024 01:38:00.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25566
+[05Jul2024 01:38:00.430] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[05Jul2024 01:38:00.591] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[05Jul2024 01:38:00.592] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[05Jul2024 01:38:00.592] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[05Jul2024 01:38:00.592] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[05Jul2024 01:38:00.668] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[05Jul2024 01:38:01.803] [Netty Epoll Server IO #1/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): literal{Server is still starting! Please wait before reconnecting.}
+[05Jul2024 01:38:03.365] [Netty Epoll Server IO #2/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): literal{Server is still starting! Please wait before reconnecting.}
+[05Jul2024 01:38:03.872] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[05Jul2024 01:38:07.234] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[05Jul2024 01:38:07.249] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[05Jul2024 01:38:07.263] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[05Jul2024 01:38:07.267] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[05Jul2024 01:38:07.273] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[05Jul2024 01:38:07.277] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[05Jul2024 01:38:07.284] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[05Jul2024 01:38:07.378] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[05Jul2024 01:38:07.556] [Netty Epoll Server IO #3/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): literal{Server is still starting! Please wait before reconnecting.}
+[05Jul2024 01:38:07.881] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[05Jul2024 01:38:08.374] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[05Jul2024 01:38:08.503] [Netty Epoll Server IO #4/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): literal{Server is still starting! Please wait before reconnecting.}
+[05Jul2024 01:38:08.874] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 27%
+[05Jul2024 01:38:09.107] [Netty Epoll Server IO #5/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): literal{Server is still starting! Please wait before reconnecting.}
+[05Jul2024 01:38:09.276] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 5404 ms
+[05Jul2024 01:38:09.277] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (8.662s)! For help, type "help"
+[05Jul2024 01:38:09.307] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[05Jul2024 01:38:09.406] [Server thread/INFO] [minecolonies/]: Finished discovering Ores 19 22
+[05Jul2024 01:38:09.407] [Server thread/INFO] [minecolonies/]: Finished discovering saplings 10
+[05Jul2024 01:38:09.407] [Server thread/INFO] [minecolonies/]: Finished discovering plantables 19
+[05Jul2024 01:38:09.407] [Server thread/INFO] [minecolonies/]: Finished discovering food 44 56
+[05Jul2024 01:38:09.408] [Server thread/INFO] [minecolonies/]: Finished discovering fuel 249
+[05Jul2024 01:38:09.408] [Server thread/INFO] [minecolonies/]: Finished discovering flowers 24
+[05Jul2024 01:38:09.409] [Server thread/INFO] [minecolonies/]: Finished discovering items 1978
+[05Jul2024 01:38:09.410] [Server thread/INFO] [minecolonies/]: Finished discovering lucky oreBlocks 6
+[05Jul2024 01:38:09.410] [Server thread/INFO] [minecolonies/]: Finished discovering recruitment costs
+[05Jul2024 01:38:09.411] [Server thread/INFO] [minecolonies/]: Finished discovering diseases
+[05Jul2024 01:38:09.421] [Server thread/INFO] [minecolonies/]: Finished discovering compostables 136
+[05Jul2024 01:38:15.166] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juli337[/190.215.233.3:26585] logged in with entity id 66 at (105.62398821140043, 65.0, -862.0903129691645)
+[05Jul2024 01:38:15.248] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 joined the game
+[05Jul2024 01:38:15.280] [Server thread/INFO] [structurize/]: New Server UUID 7f54a767-d921-42a5-a07f-de9eb2f41151
+[05Jul2024 01:38:17.944] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2835ms or 56 ticks behind
+[05Jul2024 01:38:20.355] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: DomingoFuenza[/190.215.241.198:57345] logged in with entity id 326 at (-535.2364629900263, -6.0, -1287.5791500766509)
+[05Jul2024 01:38:20.395] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: DomingoFuenza joined the game
+[05Jul2024 01:38:22.600] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Lowwen[/190.45.131.12:55777] logged in with entity id 442 at (-532.2820391971021, -6.0, -1291.5662635717024)
+[05Jul2024 01:38:22.612] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Lowwen joined the game
+[05Jul2024 01:38:27.540] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Brau3man[/181.43.121.119:29928] logged in with entity id 701 at (-559.3485375082762, 10.0, -1326.866943258172)
+[05Jul2024 01:38:27.556] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Brau3man joined the game
+[05Jul2024 01:38:42.204] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Yuri_Macarron[/179.56.240.38:52426] logged in with entity id 1035 at (320.7322806355102, 66.0, -985.3895044820592)
+[05Jul2024 01:38:42.214] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yuri_Macarron joined the game
+[05Jul2024 01:39:08.839] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Brau3man was blown up by Creeper
+[05Jul2024 01:39:30.285] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juli337 lost connection: Disconnected
+[05Jul2024 01:39:30.286] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 left the game
+[05Jul2024 01:39:34.080] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Yuri_Macarron lost connection: Disconnected
+[05Jul2024 01:39:34.081] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yuri_Macarron left the game
+[05Jul2024 01:39:36.866] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juli337[/190.215.233.3:26804] logged in with entity id 2085 at (105.62398821140043, 65.0, -862.0903129691645)
+[05Jul2024 01:39:36.876] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 joined the game
+[05Jul2024 01:39:39.288] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Yuri_Macarron[/179.56.240.38:52531] logged in with entity id 2373 at (320.7322806355102, 66.0, -985.3895044820592)
+[05Jul2024 01:39:39.297] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yuri_Macarron joined the game
+[05Jul2024 01:40:07.435] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2026ms or 40 ticks behind
+[05Jul2024 01:40:21.993] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juli337 lost connection: Timed out
+[05Jul2024 01:40:21.994] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 left the game
+[05Jul2024 01:40:30.788] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juli337[/190.215.233.3:26916] logged in with entity id 3173 at (103.5, 64.0, -860.5)
+[05Jul2024 01:40:30.804] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 joined the game
+[05Jul2024 01:40:39.430] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Yuri_Macarron lost connection: Disconnected
+[05Jul2024 01:40:39.431] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yuri_Macarron left the game
+[05Jul2024 01:40:54.937] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Yuri_Macarron[/179.56.240.38:52619] logged in with entity id 3469 at (320.7322806355102, 66.0, -985.3895044820592)
+[05Jul2024 01:40:54.946] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yuri_Macarron joined the game
+[05Jul2024 01:41:06.049] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Lowwen> -450, -1205
+[05Jul2024 01:41:30.885] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juli337 lost connection: Disconnected
+[05Jul2024 01:41:30.886] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 left the game
+[05Jul2024 01:41:40.123] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juli337[/190.215.233.3:26975] logged in with entity id 3993 at (103.5, 64.0, -860.5)
+[05Jul2024 01:41:40.132] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 joined the game
+[05Jul2024 01:41:40.918] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Yuri_Macarron lost connection: Disconnected
+[05Jul2024 01:41:40.919] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Yuri_Macarron left the game
+[05Jul2024 01:41:49.979] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Brau3man was slain by Mercenary
+[05Jul2024 01:42:10.349] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Lowwen has made the advancement [Special Delivery]
+[05Jul2024 01:42:40.205] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juli337 lost connection: Disconnected
+[05Jul2024 01:42:40.206] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 left the game
+[05Jul2024 01:42:54.203] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juli337[/190.215.233.3:27098] logged in with entity id 5073 at (103.5, 64.0, -860.5)
+[05Jul2024 01:42:54.214] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 joined the game
+[05Jul2024 01:43:28.126] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juli337 lost connection: Disconnected
+[05Jul2024 01:43:28.127] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 left the game
+[05Jul2024 01:47:45.866] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=-126, y=64, z=-1269} BlockPos{x=-126, y=62, z=-1270}
+[05Jul2024 01:49:53.036] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: DomingoFuenza lost connection: Disconnected
+[05Jul2024 01:49:53.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: DomingoFuenza left the game
+[05Jul2024 01:51:04.394] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Lowwen lost connection: Disconnected
+[05Jul2024 01:51:04.395] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Lowwen left the game
+[05Jul2024 01:56:54.236] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Brau3man lost connection: Disconnected
+[05Jul2024 01:56:54.237] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Brau3man left the game
+[05Jul2024 02:52:32.050] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juli337[/190.215.233.3:35895] logged in with entity id 12665 at (103.5, 64.0, -860.5)
+[05Jul2024 02:52:32.069] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 joined the game
+[05Jul2024 02:53:32.130] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juli337 lost connection: Disconnected
+[05Jul2024 02:53:32.130] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 left the game
+[05Jul2024 02:58:26.877] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juli337[/190.215.233.3:36565] logged in with entity id 13692 at (104.45107516548681, 64.0, -858.5197409259689)
+[05Jul2024 02:58:26.907] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 joined the game
+[05Jul2024 02:58:50.681] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juli337 lost connection: Disconnected
+[05Jul2024 02:58:50.682] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 left the game
+[05Jul2024 03:00:58.123] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Juli337[/190.215.233.3:50311] logged in with entity id 14507 at (101.98750001192093, 64.875, -859.2376670990927)
+[05Jul2024 03:00:58.148] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 joined the game
+[05Jul2024 03:01:21.230] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Juli337 lost connection: Disconnected
+[05Jul2024 03:01:21.231] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Juli337 left the game
+[05Jul2024 13:51:38.812] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+[05Jul2024 13:51:38.859] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[05Jul2024 13:51:38.860] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[05Jul2024 13:51:38.861] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[05Jul2024 13:51:38.942] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[05Jul2024 13:51:39.048] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[05Jul2024 13:51:39.050] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[05Jul2024 13:51:39.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[05Jul2024 13:51:39.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[05Jul2024 13:51:39.093] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[05Jul2024 13:51:39.093] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

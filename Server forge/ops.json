@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "e6f73704-5ce7-3b74-8b43-c65d9da3de11",
+    "name": "DomingoFuenza",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
