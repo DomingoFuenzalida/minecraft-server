@@ -18,7 +18,7 @@
 	#Should citizen name tags be rendered? [Default: true]
 	alwaysrendernametag = true
 	#Should workers work during the rain? [Default: false]
-	workersalwaysworkinrain = false
+	workersalwaysworkinrain = true
 	#Should special holiday content be displayed? [Default: true]
 	holidayfeatures = true
 	#Chance for the Miner to get an ore when mining cobblestone or stone (by default, can be expanded with datapacks to other materials). This is a percentage. (To change which ores the Miner can find, see "List of Lucky Ores".) [Default: 1, min: 0, max: 100]
@@ -26,7 +26,7 @@
 	luckyblockchance = 1
 	#The minimum level a Town Hall has to be to allow teleportation to allied colonies. [Default: 3, min: 0, max: 5]
 	#Range: 0 ~ 5
-	minthleveltoteleport = 3
+	minthleveltoteleport = 1
 	#Food consumption modifier. [Default: 1.000000, min: 0.100000, max: 100.000000]
 	#Range: 0.1 ~ 100.0
 	foodmodifier = 1.0
@@ -103,7 +103,7 @@
 	dobarbariansspawn = true
 	#minecolonies.config.barbarianhordedifficulty.comment [Default: 5, min: 0, max: 10]
 	#Range: 0 ~ 10
-	barbarianhordedifficulty = 5
+	barbarianhordedifficulty = 3
 	#minecolonies.config.maxbarbariansize.comment [Default: 80, min: 6, max: 400]
 	#Range: 6 ~ 400
 	maxBarbarianSize = 80
@@ -111,10 +111,10 @@
 	dobarbariansbreakthroughwalls = true
 	#The average number of nights between raids. [Default: 14, min: 1, max: 50]
 	#Range: 1 ~ 50
-	averagenumberofnightsbetweenraids = 14
+	averagenumberofnightsbetweenraids = 30
 	#The minimum number of nights between raids. [Default: 10, min: 1, max: 30]
 	#Range: 1 ~ 30
-	minimumnumberofnightsbetweenraids = 10
+	minimumnumberofnightsbetweenraids = 20
 	#Should mobs attack citizens? [Default: true]
 	mobattackcitizens = true
 	#minecolonies.config.shouldraiderbreakdoors.comment [Default: true]
