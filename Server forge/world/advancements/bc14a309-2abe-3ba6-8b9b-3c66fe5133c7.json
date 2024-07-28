@@ -595,6 +595,7 @@
       "apple": "2024-06-29 20:22:49 +0000",
       "pumpkin_pie": "2024-07-07 19:11:37 +0000",
       "bread": "2024-06-29 19:42:17 +0000",
+      "golden_apple": "2024-07-08 03:38:13 +0000",
       "rotten_flesh": "2024-07-06 00:27:04 +0000",
       "melon_slice": "2024-07-07 18:48:01 +0000",
       "cooked_chicken": "2024-07-01 19:15:16 +0000",
@@ -672,12 +673,15 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:pillager": "2024-06-29 22:30:21 +0000",
+      "minecraft:blaze": "2024-07-08 03:30:23 +0000",
       "minecraft:skeleton": "2024-06-29 23:20:28 +0000",
       "minecraft:ghast": "2024-07-02 17:41:53 +0000",
       "minecraft:magma_cube": "2024-07-02 17:47:26 +0000",
       "minecraft:spider": "2024-06-29 20:21:51 +0000",
       "minecraft:creeper": "2024-06-30 06:07:30 +0000",
       "minecraft:zombified_piglin": "2024-07-06 18:03:38 +0000",
+      "minecraft:wither_skeleton": "2024-07-08 03:30:04 +0000",
+      "minecraft:cave_spider": "2024-07-10 20:13:56 +0000",
       "minecraft:enderman": "2024-06-29 20:22:33 +0000",
       "minecraft:zombie": "2024-06-29 18:00:00 +0000",
       "minecraft:drowned": "2024-07-07 23:33:04 +0000",
@@ -5196,6 +5200,78 @@
   "minecraft:recipes/building_blocks/amethyst_block": {
     "criteria": {
       "has_amethyst_shard": "2024-07-07 23:44:17 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/obtain_blaze_rod": {
+    "criteria": {
+      "blaze_rod": "2024-07-08 03:35:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/blaze_powder": {
+    "criteria": {
+      "has_blaze_rod": "2024-07-08 03:35:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/brewing_stand": {
+    "criteria": {
+      "has_blaze_rod": "2024-07-08 03:35:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/orange_glazed_terracotta": {
+    "criteria": {
+      "has_orange_terracotta": "2024-07-08 03:56:52 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_magenta_bed": {
+    "criteria": {
+      "has_needed_dye": "2024-07-08 03:58:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_magenta_wool": {
+    "criteria": {
+      "has_needed_dye": "2024-07-08 03:58:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_magenta_carpet": {
+    "criteria": {
+      "has_needed_dye": "2024-07-08 03:58:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_candle": {
+    "criteria": {
+      "has_magenta_dye": "2024-07-08 03:58:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_glazed_terracotta": {
+    "criteria": {
+      "has_magenta_terracotta": "2024-07-08 03:59:43 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:production/build_blacksmith": {
+    "criteria": {
+      "blacksmith": "2024-07-08 04:06:49 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockhutcomposter": {
+    "criteria": {
+      "has_items": "2024-07-11 20:35:02 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:production/build_stonemason": {
+    "criteria": {
+      "stonemason": "2024-07-11 20:42:47 +0000"
     },
     "done": true
   },
